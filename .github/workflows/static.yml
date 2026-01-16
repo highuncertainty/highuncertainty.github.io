@@ -45,10 +45,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-      - name: Install Diplodoc CLI
-        run: npm i @diplodoc/cli -g
-      - name: Build docs
-        run: yfm -i ./docs -o ./docs-html
+      - name: Verify Node.js version before build
+        run: node --version
+      - name: Build docs with npx
+        run: npx -y @diplodoc/cli@latest -i ./docs -o ./docs-html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
