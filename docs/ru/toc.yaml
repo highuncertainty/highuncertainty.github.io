@@ -22,3 +22,5 @@ navigation:
 items:
   - name: Обо мне
     href: about.md
+  - name: Статьи и заметки
+    href: articles/toc.yaml
