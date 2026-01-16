@@ -1,5 +1,24 @@
-title: Highuncertainty
+title: Высокая неопределенность
 href: index.yaml
+navigation:
+  logo:
+    url: 'https://highuncertainty.github.io/highuncertainty-doc/ru/index.html'
+    dark:
+      icon: 'https://storage.yandexcloud.net/highuncertainty/highuncertainty-logo.svg'
+      text: 'Высокая неопределенность'
+    light:
+      icon: 'https://storage.yandexcloud.net/highuncertainty/highuncertainty-logo.svg'
+      text: 'Высокая неопределенность'
+  header:
+    leftItems:
+      - text: 'Обо мне'
+        type: 'link'
+        url: './ru/about.md'
+    rightItems:
+      - text: 'Обо мне'
+        type: 'link'
+        url: './ru/about.md'
+      - type: controls
 items:
-  - name: About
+  - name: Обо мне
     href: about.md
