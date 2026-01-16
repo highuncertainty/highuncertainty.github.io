@@ -1,12 +1,6 @@
-title: СТраница index
+title: Сайт телеграм-канала [Высокая неопределенность](https://t.me/highuncertainty)
 links:
   - title: About
     href: about.md
-  - title: Diplodoc page on index page
-    href: page.md
-  - title: YFM Structure on index page
-    href: anotherpage.md
-  - title: Sub-section on index page
-    href: sub-section/
-  - title: mermaid
-    href: diag.mermaid  
+  - title: Дзен
+    href: https://dzen.ru/highuncertainty

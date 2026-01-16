@@ -1,13 +1,13 @@
-title: Где я? Разводящая страница?
+title: Highuncertainty
 href: index.yaml
-items: 
+items:
   - name: About
     href: about.md
-  - name: Additional page 
+  - name: Additional page
     href: page.md
-  - name: Another page 
+  - name: Another page
     href: anotherpage.md
-  - name: Sub-Section 
+  - name: Sub-Section
     include:
       path: sub-section/toc.yaml
       mode: link
