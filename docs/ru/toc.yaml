@@ -16,7 +16,7 @@ navigation:
         url: './ru/about'
       - text: 'Статьи и заметки'
         type: 'link'
-        url: './ru/articles'
+        url: './ru/articles/index'
     rightItems:
       - type: controls
 items:
