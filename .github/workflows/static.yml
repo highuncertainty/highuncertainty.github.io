@@ -49,8 +49,6 @@ jobs:
         run: node --version
       - name: Build docs with npx
         run: npx -y @diplodoc/cli@latest -i ./docs -o ./docs-html
-      - name: Copy redirect index.html
-        run: cp index.html ./docs-html/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
