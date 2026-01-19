@@ -1,4 +1,8 @@
-# Documentation Template created by Diplodoc
+# High Uncertainty Documentation
+
+Исходники для сайта [highuncertainty.github.io](https://highuncertainty.github.io)
+
+Проект создан на основе Documentation Template от Diplodoc.
 
 Features:
 
@@ -9,7 +13,7 @@ Features:
 
 ## Initial project structure
 
-Initiatl project structure with basic content can be found within your public github repo "diplodoc-example/docs" 
+Initiatl project structure with basic content can be found within your public github repo "diplodoc-example/docs"
 
 ## Usage
 
