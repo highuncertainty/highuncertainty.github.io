@@ -1,4 +1,5 @@
 langs: ['ru']
-analytics:
-  yandex:
-    counter: 106336642
+docs-viewer:
+  project-name: highuncertainty-doc
+  is-new-external: true
+  metrika: 106336642
