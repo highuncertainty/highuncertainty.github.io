@@ -1,77 +1,40 @@
 const fs = require('fs');
 const path = require('path');
-const {parse, serialize} = require('parse5');
-const utils = require('parse5-utils');
 
-const metrikaScript = `<script type="text/javascript">
+const METRIKA_COUNTER = '106336642';
+
+// Скрипт Яндекс.Метрики
+const metrikaScript = `
+   <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(106336642, "init", {
+   ym(${METRIKA_COUNTER}, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
         webvisor:true
    });
-</script>`;
+</script>
+`;
 
-const metrikaNoscript = `<noscript><div><img src="https://mc.yandex.ru/watch/106336642" style="position:absolute; left:-9999px;" alt="" /></div></noscript>`;
+// Noscript для метрики
+const metrikaNoscript = `<noscript><div><img src="https://mc.yandex.ru/watch/${METRIKA_COUNTER}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>`;
 
 function injectMetrika(html) {
   // Проверяем, не добавлен ли уже код Metrika
-  if (html.includes('yandex.ru/metrika') || html.includes('ym(106336642')) {
+  if (html.includes('yandex.ru/metrika') || html.includes(`ym(${METRIKA_COUNTER}`)) {
     return html;
   }
 
-  const parsed = parse(html);
+  // Вставляем скрипт метрики перед закрывающим тегом </head>
+  let result = html.replace('</head>', `${metrikaScript}</head>`);
 
-  function traverse(node) {
-    if (node.nodeName === 'head') {
-      // Создаем script узел для Metrika
-      const scriptNode = utils.createElement('script');
-      utils.setAttribute(scriptNode, 'type', 'text/javascript');
-      const scriptContent = `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  // Вставляем noscript сразу после открывающего тега <body>
+  result = result.replace('<body>', `<body>\n${metrikaNoscript}`);
 
-   ym(106336642, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });`;
-      const scriptText = utils.createTextNode(scriptContent);
-      utils.append(scriptNode, scriptText);
-      utils.append(node, scriptNode);
-    }
-
-    if (node.nodeName === 'body') {
-      // Создаем noscript для метрики
-      const noscript = utils.createElement('noscript');
-      const div = utils.createElement('div');
-      const img = utils.createElement('img');
-      utils.setAttribute(img, 'src', 'https://mc.yandex.ru/watch/106336642');
-      utils.setAttribute(img, 'style', 'position:absolute; left:-9999px;');
-      utils.setAttribute(img, 'alt', '');
-      utils.append(div, img);
-      utils.append(noscript, div);
-      // Вставляем в начало body
-      if (node.childNodes && node.childNodes.length > 0) {
-        node.childNodes.unshift(noscript);
-      } else {
-        utils.append(node, noscript);
-      }
-    }
-
-    if (node.childNodes) {
-      node.childNodes.forEach(child => traverse(child));
-    }
-  }
-
-  traverse(parsed);
-
-  return serialize(parsed);
+  return result;
 }
 
 // Рекурсивная функция для поиска HTML файлов
@@ -110,7 +73,7 @@ if (fs.existsSync(outputDir)) {
       fs.writeFileSync(filePath, transformed, {encoding: 'utf8'});
       console.log(`Injected Metrika into ${filePath}`);
     } catch (err) {
-      console.error(`Error processing ${filePath}:`, err);
+      console.error(`Error processing ${filePath}:`, err.message);
     }
   });
 
