@@ -19,7 +19,7 @@ keywords: ["Морган Джонс", "решение проблем", "анал
 
 Приведу здесь упражнение 13 из книги. Для удобства я сжал его и кратко описал метод. Во второй вкладке привожу полный текст, если вдруг заинтересует.
 
-![alt text](_images/problem-solving-intelligence-methods.png)
+![alt text](../../_images/problem-solving-intelligence-methods.png)
 
 {% list tabs %}
 
