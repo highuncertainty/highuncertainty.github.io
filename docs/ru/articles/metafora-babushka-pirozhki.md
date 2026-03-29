@@ -9,7 +9,7 @@ author: Матвей Софьин
 
 Метафора из выпуска 5 подкаста ["Кофе и аналитика"](https://music.yandex.ru/album/35205108/track/141232727?utm_medium=copy_link&ref_id=2B3E2148-ED6D-49C5-898B-DED280610918) — Zoom-созвон с Матвеем Софьиным.
 
-![Качество глоссария](../../_images/grandy-metaphora-pic.png)
+![Метафора про пирожки](../../_images/grandy-metaphora-pic.png)
 
 ## Простая ситуация
 
