@@ -13,3 +13,8 @@ items:
     href: big-book-about-job.md
   - name: Решение проблем по методам спецслужб
     href: Problem_Solving_Intelligence_Methods.md
+  - name: Черновики
+    hidden: true
+    items:
+      - name: Нужен ли системный аналитик
+        href: is-sa-needed.md
