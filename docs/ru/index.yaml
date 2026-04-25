@@ -5,3 +5,17 @@ links:
     href: about.md
   - title: Статьи и заметки
     href: articles/index.yaml
+  - title: Три шурупа — оценка сроков
+    href: articles/tri-shurupa-ocenka-srokov.md
+  - title: Качество глоссария
+    href: articles/glossary-quality.md
+  - title: Метафора про пирожки
+    href: articles/metafora-babushka-pirozhki.md
+  - title: Бит и байт
+    href: articles/bit.md
+  - title: Большая книга про работу
+    href: articles/big-book-about-job.md
+  - title: Release early, release often
+    href: articles/release-early.md
+  - title: Решение проблем по методам спецслужб
+    href: articles/Problem_Solving_Intelligence_Methods.md
