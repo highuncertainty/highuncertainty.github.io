@@ -1,115 +1,21 @@
-# Тема документации с цветовой палитрой
-# Основные цвета: #5282FF (синий), #FFDB4D (желтый), #E3EBFF (светло-синий), #D8F0DE (светло-зеленый)
+# Упрощенная тема документации
+# Основные цвета: белый фон, #E3EBFF (светло-синий) для выделения, #D8F0DE (светло-зеленый) для цитат
 
 # Основной акцентный цвет - синий
 base-brand: "#5282FF"
 
-# Фон страницы - светло-синий
-base-background: "#E3EBFF"
+# Фон страницы - белый
+base-background: "#FFFFFF"
 
-# Цвет выделения - более насыщенный синий
-base-selection: "#3A6BFF"
+# Цвет выделения - светло-синий
+base-selection: "#E3EBFF"
 
-# Цвет при наведении - светло-зеленый
-base-simple-hover: "#D8F0DE"
-
-# Цвет цитат - желтый
-quote: "#FFDB4D"
-
-# Цвет активного таба - синий
-tab-active: "#5282FF"
-
-# Цвет текста табов - темно-синий
-tab-text: "#1A3B99"
-
-# Цвет текста табов при наведении - синий
-tab-text-hover: "#5282FF"
-
-# Цвет ссылок - синий
-link: "#5282FF"
-
-# Цвет ссылок при наведении - более насыщенный синий
-link-hover: "#3A6BFF"
-
-# Фон всплывающих подсказок - светло-зеленый
-term-dfn-background: "#D8F0DE"
-
-# Основной текст - темно-синий
-text-primary: "#1A1A1A"
-
-# Второстепенный текст - серо-синий
-text-secondary: "#666666"
-
-# Линии между элементами - светло-синий
-line-generic: "#C4D4FF"
-
-# Цвет текста в блоке кода - темно-синий
-code: "#1A3B99"
-
-# Фон блока кода - светло-зеленый
-code-background: "#D8F0DE"
-
-# Цвет текста в фрагменте кода - синий
-inline-code: "#5282FF"
-
-# Фон фрагмента кода - светло-синий
-inline-code-background: "#E3EBFF"
-
-# Цвет текста в таблице - темно-синий
-table: "#1A1A1A"
-
-# Фон таблицы - белый
-table-background: "#FFFFFF"
-
-# Фон выделяющихся рядов таблицы - светло-зеленый
-table-row-background: "#D8F0DE"
-
-# Рамка таблицы - светло-синий
-table-border: "#C4D4FF"
-
-# Цвета заметок
-note-info-background: "#E3EBFF"      # Светло-синий для заметок
-note-tip-background: "#D8F0DE"       # Светло-зеленый для советов
-note-warning-background: "#FFDB4D"   # Желтый для важных заметок
-note-important-background: "#FFB84D" # Оранжевый для предупреждений
-
-# Оглавление статьи
-mini-toc-border: "#C4D4FF"           # Линия оглавления
-mini-toc: "#666666"                  # Текст оглавления
-mini-toc-hover: "#5282FF"            # Текст при наведении
-mini-toc-active: "#5282FF"           # Активный пункт
-mini-toc-active-border: "#5282FF"    # Линия активного пункта
+# Цвет цитат - светло-зеленый
+quote: "#D8F0DE"
 
 # Темная тема
 dark:
-  base-brand: "#5282FF"              # Сохраняем синий как основной
-  base-background: "#1A1A1A"          # Темный фон
-  base-selection: "#3A6BFF"           # Выделение
-  base-simple-hover: "#2A2A2A"        # Наведение на темном фоне
-  quote: "#FFDB4D"                    # Желтые цитаты
-  tab-active: "#5282FF"               # Активные табы
-  tab-text: "#FFFFFF"                 # Белый текст
-  tab-text-hover: "#5282FF"           # Синий при наведении
-  link: "#5282FF"                     # Синие ссылки
-  link-hover: "#3A6BFF"               # Насыщенный синий
-  term-dfn-background: "#2A2A2A"      # Темный фон подсказок
-  text-primary: "#FFFFFF"             # Белый основной текст
-  text-secondary: "#CCCCCC"           # Светло-серый второстепенный
-  line-generic: "#333333"             # Темные линии
-  code: "#FFFFFF"                     # Белый код
-  code-background: "#2A2A2A"          # Темный фон кода
-  inline-code: "#5282FF"              # Синий инлайн-код
-  inline-code-background: "#2A2A2A"   # Темный фон инлайн-кода
-  table: "#FFFFFF"                    # Белый текст таблиц
-  table-background: "#1A1A1A"         # Темный фон таблиц
-  table-row-background: "#2A2A2A"     # Темный фон рядов
-  table-border: "#333333"             # Темные рамки
-  note-info-background: "#2A2A2A"     # Темный фон заметок
-  note-tip-background: "#1E3A1E"      # Темно-зеленый для советов
-  note-warning-background: "#664400"   # Темно-желтый для важного
-  note-important-background: "#662200" # Темно-оранжевый для предупреждений
-  mini-toc-border: "#333333"          # Темные линии оглавления
-  mini-toc: "#CCCCCC"                 # Светло-серый текст
-  mini-toc-hover: "#5282FF"           # Синий при наведении
-  mini-toc-active: "#5282FF"          # Синий активный пункт
-  mini-toc-active-border: "#5282FF"   # Синяя линия активного пункта
+  base-brand: "#5282FF"
+  base-background: "#1A1A1A"
+  base-selection: "#2A2A2A"
+  quote: "#1E3A1E"
